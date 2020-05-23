@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "@Store/*": ["src/store/*"],
+      "@Stores/*": ["src/store/stores/*"],
+      "@Src/*": ["src/*"],
+      "@UI/*": ["src/ui/*"],
+      "@Types/*": ["src/@types/*"],
+      "@Images/*": ["src/public/images/*"],
+      "@Styles/*": ["src/public/styles/*"],
+      "@Components/*": ["src/components/*"]
+    }
+  }
+}

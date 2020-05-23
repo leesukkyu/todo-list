@@ -1,0 +1,16 @@
+@import "@Styles/var.scss";
+
+.input-comp {
+  padding: 0 0 0 4px;
+  min-width: 260px;
+  font-size: 13px;
+  height: 28px;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px lighten($gray-light, 35);
+  transition: border-bottom 0.3s ease;
+
+  &:focus {
+    border-bottom: solid 1px $primary;
+  }
+}

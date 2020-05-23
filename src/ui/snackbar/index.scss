@@ -1,0 +1,47 @@
+@import "@Styles/var.scss";
+
+.comp-snackbar {
+    max-width: 90%;
+    position: fixed;
+    top: 68px;
+    right: 24px;
+    z-index: 9998;
+
+    .snackbar-wrap {
+        color: $white;
+        min-width: 200px;
+        padding: 14px 16px;
+        border-radius: 4px;
+        background: $green;
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+
+        &.scale-enter {
+            opacity: 0;
+            transform: scale(0.75, 0.56);
+        }
+
+        &.scale-enter-active {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 0.22s ease, transform 0.15s ease;
+        }
+
+        &.scale-exit {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        &.scale-exit-active {
+            opacity: 0;
+            transform: scale(0.75, 0.56);
+            transition: opacity 0.22s ease, transform 0.15s ease;
+        }
+    }
+
+    &.negative {
+        .snackbar-wrap {
+            color: $white;
+            background: $pink;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import "@Styles/common.scss";
+@import "@Styles/var.scss";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: $gray;
+}
+.root-wrap {
+  height: 100%;
+}
+.app-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

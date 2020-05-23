@@ -1,0 +1,16 @@
+.button-comp {
+    width: 116px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    transition: all 0.23s ease;
+
+    &:disabled {
+        color: #a6a6a6 !important;
+        background: #e0e0e0 !important;
+    }
+
+    &.icon {
+        width: auto;
+    }
+}

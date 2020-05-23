@@ -1,0 +1,49 @@
+@import "@Styles/var.scss";
+
+.complete-todo-comp {
+    position: relative;
+    padding: 8px 20px 8px;
+    display: flex;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+    .content-box {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        word-break: break-all;
+        white-space: pre-wrap;
+    }
+
+    .time-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .status-btn-box {
+        display: flex;
+        align-items: center;
+
+        .status-btn {
+            padding: 4px;
+        }
+    }
+
+    .delete-btn-box {
+        display: flex;
+        align-items: center;
+        
+        .delete-btn {
+            padding: 4px;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        background-color: $blue;
+        top: 8px;
+        bottom: 8px;
+        left: 10px;
+    }
+}

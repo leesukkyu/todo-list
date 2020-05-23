@@ -1,0 +1,27 @@
+$unit: 4px;
+@for $i from 1 through 5 {
+  .mt-#{$i} {
+    margin-top: $i * $unit;
+  }
+  .mr-#{$i} {
+    margin-right: $i * $unit;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * $unit;
+  }
+  .ml-#{$i} {
+    margin-left: $i * $unit;
+  }
+  .pt-#{$i} {
+    padding-top: $i * $unit;
+  }
+  .pr-#{$i} {
+    padding-right: $i * $unit;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * $unit;
+  }
+  .pl-#{$i} {
+    padding-left: $i * $unit;
+  }
+}

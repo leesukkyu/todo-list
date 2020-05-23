@@ -1,0 +1,21 @@
+@import "@Styles/var.scss";
+
+.add-todo-comp {
+    padding: 24px 16px 0;
+    display: flex;
+
+    .textarea-box {
+        flex: 1;
+    }
+
+    .submit-btn-box {
+        padding: 0 0 0 12px;
+
+        .submit-btn {
+            color: $gray;
+            background: $primary;
+            padding: 0 8px;
+            width: 150px;
+        }
+    }
+}

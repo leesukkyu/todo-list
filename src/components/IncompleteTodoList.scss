@@ -1,0 +1,15 @@
+.incomplete-todo-list-comp {
+    height: 100%;
+
+    .incomplete-todo-list {
+        padding: 0 4px 45px 4px;
+        flex: 1;
+        overflow: auto;
+    }
+
+    &.all {
+        &.active {
+            height: 50%;
+        }
+    }
+}

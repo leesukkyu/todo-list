@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": true,
+        "debug": true,
+        "targets": {
+          "ie": "11"
+        }
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
+  ],
+  "sourceType": "script"
+}

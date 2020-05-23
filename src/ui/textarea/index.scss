@@ -1,0 +1,53 @@
+@import "@Styles/var.scss";
+
+.textarea-comp {
+  position: relative;
+  border: solid 1px lighten($gray-light, 35);
+  border-radius: 4px;
+  transition: border 0.2s ease;
+
+  .icon-box {
+    margin: 0 4px 0 0;
+    line-height: 42px;
+  }
+
+  .label-box {
+    display: block;
+    position: relative;
+    padding: 18px 14px;
+
+    .placeholder {
+      position: absolute;
+      padding: 0 5px;
+      line-height: 42px;
+      color: $gray-light;
+      font-size: 13px;
+      white-space: nowrap;
+      pointer-events: none;
+      transform-origin: top left;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .textarea {
+      width: 100%;
+      min-height: 40px;
+      max-height: 160px;
+      border: none;
+      outline: none;
+      resize: vertical;
+    }
+  }
+
+  // 값이 있는 경우
+  &.active {
+    .placeholder {
+      color: $gray;
+      background-color: $white;
+      transform: translateY(-34px) scale(0.85);
+    }
+  }
+  // 포커스 된 경우
+  &.focus {
+    border: solid 1px $primary;
+  }
+}

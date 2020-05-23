@@ -1,0 +1,67 @@
+@import "@Styles/var.scss";
+
+.complete-todo-list-comp {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50%;
+    transform: translateY(200%);
+
+    .open-complete-list-btn-box {
+        position: absolute;
+        top: -3px;
+        width: 100%;
+        height: 6px;
+        background: $primary;
+        transform: translateY(0px);
+        transition: transform 0.23s;
+        .open-complete-list-btn {
+            position: absolute;
+            top: -40px;
+            right: 20px;
+            width: 170px;
+            height: 40px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: $gray;
+            background-color: $primary;
+        }
+    }
+
+    .complete-todo-list {
+        padding: 0 4px 45px 4px;
+        flex: 1;
+        overflow: auto;
+    }
+
+    &.all {
+        &.active {
+            transform: translateY(100%);
+        }
+
+        &:not(.active) {
+            .open-complete-list-btn-box {
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
+        }
+    }
+
+    &.complete {
+        height: 100%;
+        transform: translateY(0);
+        .open-complete-list-btn-box {
+            display: none;
+        }
+    }
+
+    &.animation-enter {
+        transition: transform 0.23s;
+    }
+
+    &.animation-exit {
+        transition: transform 0.23s;
+    }
+}
