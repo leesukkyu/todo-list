@@ -4,4 +4,5 @@
 
 #### It was written using typescript.
 
-##### npm run serve > localhost:9000
+- npm install
+- npm run serve > localhost:9000
