@@ -1,6 +1,6 @@
 # todo-list
 
-### todo-list app using react, mobx and es8 (async, await)
+### todo-list app using react, mobx and 2017(async, await)
 
 #### It was written using typescript.
 
